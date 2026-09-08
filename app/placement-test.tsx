@@ -152,7 +152,7 @@ export function PlacementTest() {
         <div className="result-score">Resultado: {score} de {questions.length} respuestas correctas</div>
         <p className="result-note">Esta evaluación es orientativa. Una breve entrevista con el profesor nos ayudará a recomendarte el grupo y plan adecuados.</p>
         <div className="result-actions">
-          <a className="button button-primary" href="tel:+523312502411">Solicitar orientación</a>
+          <a className="button button-primary" href="https://wa.me/523312502411?text=Hola%2C%20termin%C3%A9%20el%20examen%20de%20ubicaci%C3%B3n%20y%20quiero%20orientaci%C3%B3n%20sobre%20mi%20plan." target="_blank" rel="noreferrer">Solicitar orientación por WhatsApp</a>
           <button className="reset-button" type="button" onClick={reset}><RotateCcw size={16} /> Repetir examen</button>
         </div>
       </div>

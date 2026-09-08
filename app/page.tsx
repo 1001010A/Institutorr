@@ -18,6 +18,8 @@ import {
 import { PlacementTest } from './placement-test';
 
 export default function Home() {
+  const whatsappUrl = 'https://wa.me/523312502411?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20clases%20de%20R%26R%20Ingl%C3%A9s.';
+
   return (
     <main>
       <header className="site-header">
@@ -28,6 +30,7 @@ export default function Home() {
         <nav aria-label="Navegación principal">
           <a href="#clases">Clases</a>
           <a href="#metodo">Nuestro método</a>
+          <a className="nav-facebook" href="https://www.facebook.com/p/RR-Ingl%C3%A9s-100050989914747/" target="_blank" rel="noreferrer"><ExternalLink size={15} /> Facebook</a>
           <a className="nav-cta" href="#examen">Examen de ubicación</a>
         </nav>
       </header>
@@ -48,7 +51,7 @@ export default function Home() {
           <p>Clases dinámicas en grupos pequeños, con un trato cercano y un plan pensado para ti.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#examen">Hacer examen de ubicación <ArrowRight size={18} /></a>
-            <a className="button button-light" href="tel:+523312502411">Hablar con un profesor</a>
+            <a className="button button-light" href={whatsappUrl} target="_blank" rel="noreferrer"><MessageCircle size={18} /> Escribir por WhatsApp</a>
           </div>
           <div className="hero-facts" aria-label="Características de las clases">
             <span><UsersRound size={18} /> Grupos reducidos</span>
@@ -80,7 +83,7 @@ export default function Home() {
               <li><Check /> Actividades dinámicas y conversación</li>
               <li><Check /> Seguimiento personal en grupo pequeño</li>
             </ul>
-            <a href="tel:+523312502411">Preguntar por disponibilidad <ArrowRight size={17} /></a>
+            <a href={whatsappUrl} target="_blank" rel="noreferrer">Preguntar por disponibilidad <ArrowRight size={17} /></a>
           </article>
           <article className="plan-card">
             <span className="plan-label">Ideal para crear el hábito</span>
@@ -92,7 +95,7 @@ export default function Home() {
               <li><Check /> Horarios flexibles según tu ritmo</li>
               <li><Check /> Retroalimentación clase a clase</li>
             </ul>
-            <a href="tel:+523312502411">Conocer horarios <ArrowRight size={17} /></a>
+            <a href={whatsappUrl} target="_blank" rel="noreferrer">Conocer horarios <ArrowRight size={17} /></a>
           </article>
         </div>
       </section>
@@ -146,10 +149,16 @@ export default function Home() {
             <p>Con gusto te orientamos para encontrar el grupo, horario y nivel adecuados para ti.</p>
           </div>
           <div className="contact-details">
-            <a href="tel:+523312502411"><Phone /><span><small>Teléfono</small>33 1250 2411</span></a>
+            <a className="whatsapp-contact" href={whatsappUrl} target="_blank" rel="noreferrer"><MessageCircle /><span><small>WhatsApp</small>Escríbenos al 33 1250 2411</span></a>
+            <a href="tel:+523312502411"><Phone /><span><small>Teléfono</small>Llámanos al 33 1250 2411</span></a>
             <a href="mailto:ricardoramos11@yahoo.com"><Mail /><span><small>Correo</small>ricardoramos11@yahoo.com</span></a>
             <a href="https://www.bing.com/maps?q=Av.+Presidentes+1994,+Lomas+del+Paradero,+Guadalajara,+Jalisco+44840" target="_blank" rel="noreferrer"><MapPin /><span><small>Visítanos</small>Av. Presidentes 1994, Lomas del Paradero, Guadalajara, Jal.</span></a>
           </div>
+          <a className="facebook-spotlight" href="https://www.facebook.com/p/RR-Ingl%C3%A9s-100050989914747/" target="_blank" rel="noreferrer">
+            <span className="facebook-icon">f</span>
+            <span><small>Noticias, fechas y nuevos cursos</small><strong>Sigue a R&R Inglés en Facebook</strong></span>
+            <ExternalLink size={20} />
+          </a>
         </div>
       </section>
 
