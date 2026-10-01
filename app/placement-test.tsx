@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, ArrowRight, CheckCircle2, RotateCcw } from 'lucide-react';
@@ -107,7 +107,7 @@ export function PlacementTest() {
     const register = context.registerTool({
       name: 'complete_placement_test',
       title: 'Completar examen de ubicación',
-      description: 'Completa el examen de ubicación de R&R Inglés con cinco respuestas y muestra el nivel sugerido en la página.',
+      description: 'Completa el examen de ubicación del Instituto R&R Inglés con cinco respuestas y muestra el nivel sugerido en la página.',
       inputSchema: {
         type: 'object',
         properties: {
@@ -189,3 +189,4 @@ export function PlacementTest() {
     </div>
   );
 }
+

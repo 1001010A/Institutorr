@@ -13,9 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'R&R Inglés | Clases personalizadas en Guadalajara',
+  title: 'Instituto R&R Inglés | Inglés Sin Límites',
   description:
-    'Clases de inglés personalizadas en grupos pequeños, cursos sabatinos y entre semana, y preparación para certificaciones.',
+    'Clases de inglés personalizadas en grupos pequeños, cursos sabatinos y diarios, examen de ubicación y preparación para certificaciones en Lomas del Paradero.',
+  icons: { icon: '/favicon.png' },
 };
 
 export default function RootLayout({
